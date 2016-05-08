@@ -62,6 +62,6 @@ h4 {
 	100% {transform: rotateZ(360deg);}
 }
 body {
-	background-image: url("./bk.jpeg");
+	background-image: url("../image/bk.jpeg");
 	background-size: cover;
 }

@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+.control {
+	margin: 30px;
+}
+h3 {
+	margin: 10px;
+}
+h4 {
+	margin: 10px;
+}
+.arrow {    
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 30px;
+    cursor: pointer;
+}
+#music-pic {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	animation: 6s imground linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	margin-top: -150px;
+}
+#music-control {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	margin-top: -150px;
+	background: rgba(0,0,0,0.5);
+	opacity: 0;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s;
+}
+#music-control:hover {
+	opacity: 1;
+}
+
+.fa {
+	font-size: 3.5em;
+    color: rgba(255, 255, 255, .8);
+}
+
+@keyframes imground{
+	0% {transform: rotateZ(0deg);}
+	50% {transform: rotateZ(180deg);}
+	100% {transform: rotateZ(360deg);}
+}
+body {
+	background-image: url("./bk.jpeg");
+	background-size: cover;
+}

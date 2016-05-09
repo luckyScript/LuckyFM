@@ -29,16 +29,21 @@
 			getMusic();
 		});
 
+	document.querySelector(".home")
+		.addEventListener("click", function() {
+			window.location.href = "http://www.luckyscript.me"
+		});
+
 	document.querySelector("#music-control")
 		.addEventListener("click", function() {
 			if (document.querySelector('audio').paused) {
 				document.querySelector('audio').play();
 				$('#music-pic').css("animation","6s imground linear infinite");
-				$(".fa").removeClass("fa-play").addClass("fa-pause");
+				$(".controller").removeClass("fa-play").addClass("fa-pause");
 			} else {
 				document.querySelector('audio').pause();
 				$('#music-pic').css("animation","a");
-				$(".fa").removeClass("fa-pause").addClass("fa-play");
+				$(".controller").removeClass("fa-pause").addClass("fa-play");
 			}
 		})
 })(jQuery);

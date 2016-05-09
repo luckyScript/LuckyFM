@@ -4,7 +4,7 @@ var app = express();
 var fs = require('fs');
 var bodyParser = require('body-parser')
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,7 +13,7 @@ var detail = '';
 var configData;
 
 
-readFile("./config.json",function(data) {
+readFile(__dirname + "/config.json",function(data) {
     configData = JSON.parse(data.toString());
     var playList = configData.playList;
     fetchDetail(playList,function (detail) {
@@ -73,7 +73,7 @@ function readFile(file, callback) {
     console.log("get /");
 })*/
 
-app.listen('80', function() {
+app.listen('3000', function() {
     console.log("app running on server port 80");
 })
 

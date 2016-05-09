@@ -9,24 +9,41 @@ html,body {
 .control {
 	margin: 30px;
 }
+.detail {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+}
 h3 {
 	margin: 10px;
 }
 h4 {
 	margin: 10px;
 }
-.arrow {    
+.arrow,.home {    
 	width: 50px;
     height: 50px;
     border-radius: 50%;
     margin: 30px;
     cursor: pointer;
+    background: rgba(0,0,0,0.8);
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .fa {
+	font-size: 2.6em;
+    color: rgb(255, 255, 255);
+}
+.arrow .fa {
+	font-size: 2.6em;
+    color: rgb(255, 255, 255);
 }
 #music-pic {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
-	animation: 6s imground linear infinite;
+	animation: 10s imground linear infinite;
 	position: absolute;
 	top: 50%;
 	left: 25%;
@@ -51,7 +68,7 @@ h4 {
 	opacity: 1;
 }
 
-.fa {
+#music-control .fa {
 	font-size: 3.5em;
     color: rgba(255, 255, 255, .8);
 }
@@ -64,4 +81,24 @@ h4 {
 body {
 	background-image: url("../image/bk.jpeg");
 	background-size: cover;
+}
+@media screen and (max-width: 600px) {
+	#music-pic {
+		width: 200px;
+		height: 200px;
+		margin-top: -100px;
+	}
+	#music-control {
+		width: 50px;
+		height: 50px;
+		margin-left: -25px;
+		background: rgb(0,0,0);
+		opacity: 1;
+		top: 100%;
+		left: 50%;
+	}
+	#music-control .fa {
+		font-size: 2.2em;
+	    color: rgba(255, 255, 255, 1);
+	}
 }

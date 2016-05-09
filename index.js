@@ -73,7 +73,7 @@ function readFile(file, callback) {
     console.log("get /");
 })*/
 
-app.listen('3000', function() {
+app.listen('80', function() {
     console.log("app running on server port 80");
 })
 

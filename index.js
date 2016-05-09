@@ -46,7 +46,7 @@ function fetchDetail (id,callback) {
 	        detail += chunk.toString('utf8').trim();
             setTimeout(function() {
                 callback(detail);
-            },3000)
+            },5000)
 	    });
 	}).on("error", function (e) {
 	    console.log(e.message);
@@ -73,7 +73,7 @@ function readFile(file, callback) {
     console.log("get /");
 })*/
 
-app.listen('3000', function() {
+app.listen('80', function() {
     console.log("app running on server port 80");
 })
 

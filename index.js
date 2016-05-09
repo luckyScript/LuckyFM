@@ -74,6 +74,6 @@ function readFile(file, callback) {
 })*/
 
 app.listen('3000', function() {
-    console.log("app running on server port 3000");
+    console.log("app running on server port 80");
 })
 

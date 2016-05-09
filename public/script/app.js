@@ -6,11 +6,13 @@
 			method: "GET"
 		}).done(function(data) {
 			musicData = data;
-			document.querySelector('audio').src = musicData.mp3Url;
+			var audio = document.querySelector('audio');
+			audio.src = musicData.mp3Url;
 			document.querySelector('h3').innerHTML = musicData.name;
 			document.querySelector('h4').innerHTML = musicData.artist;
 			document.querySelector('#music-pic').src = musicData.pic;
-			document.querySelector('audio').play();
+			audio.play();
+			
 		})	
 	}
 	getMusic();

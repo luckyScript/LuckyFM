@@ -20,7 +20,7 @@ h3 {
 h4 {
 	margin: 10px;
 }
-.arrow,.home {    
+.arrow,.home,.download {    
 	width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -31,12 +31,8 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-.home .fa {
-	font-size: 2.6em;
-    color: rgb(255, 255, 255);
-}
-.arrow .fa {
-	font-size: 2.6em;
+.control .fa {
+    font-size: 2.6em;
     color: rgb(255, 255, 255);
 }
 #music-pic {

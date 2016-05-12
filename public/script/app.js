@@ -8,6 +8,9 @@
 			musicData = data;
 			var audio = document.querySelector('audio');
 			audio.src = musicData.mp3Url;
+			var download = document.querySelector(".a-download");
+			download.href = musicData.mp3Url;
+			download.download = musicData.name;
 			document.querySelector('h3').innerHTML = musicData.name;
 			document.querySelector('h4').innerHTML = musicData.artist;
 			document.querySelector('#music-pic').src = musicData.pic;
